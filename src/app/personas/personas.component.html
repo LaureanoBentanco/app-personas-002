@@ -1,0 +1,19 @@
+
+<div style ="text-align: center;">
+
+  <button (click)="agregar()" style="cursor:pointer">+</button>
+
+  </div>
+
+<div class="box">
+  <app-persona
+    *ngFor="let personaElemento of personas; let id = index"
+    [personas]="personaElemento"
+    [indice] = "id"
+  >
+  </app-persona>
+</div>
+
+<div class="box">
+ <router-outlet></router-outlet>
+</div>
