@@ -15,7 +15,9 @@ export class FormularioComponent implements OnInit  {
   index: number;
   modoEdicion: number;
 
-  constructor(private personaService: PersonasService, private router: Router, private route: ActivatedRoute){}
+  constructor(private personaService: PersonasService,
+              private router: Router,
+              private route: ActivatedRoute){}
 
 
   // tslint:disable-next-line: typedef

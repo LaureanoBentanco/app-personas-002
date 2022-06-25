@@ -25,7 +25,7 @@ export class DataServices{
     modificarPersona(index: number, personas: Persona[]){
 
       let url: string;
-      url = ' https://listadopersonas-4e9fa-default-rtdb.firebaseio.com/datos' + index + '.json';
+      url = ' https://listadopersonas-4e9fa-default-rtdb.firebaseio.com/datos' + (index) + '.json';
 
       this.httpClient.put (url, personas).subscribe(response => console.log('respuesta de Modificar Persona' + response),
                                                     error => console.log('error al modificar Persona' + error));
@@ -34,7 +34,7 @@ export class DataServices{
     // tslint:disable-next-line: typedef
     eliminarPersona(index: number){
       let url: string;
-      url = ' https://listadopersonas-4e9fa-default-rtdb.firebaseio.com/datos' + index + '.json';
+      url = ' https://listadopersonas-4e9fa-default-rtdb.firebaseio.com/datos' + (index) + '.json';
 
       this.httpClient.delete (url).subscribe(respuesta => console.log('respuesta de borrar Persona' + respuesta),
                                              error => console.log('error al borrar Persona' + error));
