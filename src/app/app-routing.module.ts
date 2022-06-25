@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ErrorComponent } from './error/error.component';
 import { FormularioComponent } from './personas/formulario/formulario.component';
 import { PersonasComponent } from './personas/personas.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
    {path: 'agregar', component: FormularioComponent},
    {path: ':id', component: FormularioComponent},
    ]},
+   {path: 'login', component: LoginComponent},
    {path: '**', component: ErrorComponent}
 
  ];
